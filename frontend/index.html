@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESPE Micro-Blog</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🎓 ESPE Micro-Blog</h1>
+            <p>Comunicación interna para la comunidad universitaria</p>
+        </header>
+
+        <main>
+            <section class="post-form">
+                <h2>Comparte tu mensaje</h2>
+                <div class="form-group">
+                    <textarea id="postContent" placeholder="¿Qué está pasando en ESPE hoy?" maxlength="280"
+                        rows="3"></textarea>
+                    <div class="char-counter">
+                        <span id="charCount">0</span>/280
+                    </div>
+                    <button id="postButton" onclick="createPost()">Publicar Mensaje</button>
+                </div>
+            </section>
+
+            <section class="posts-section">
+                <h2>Mensajes Recientes</h2>
+                <div id="postsContainer" class="posts-container">
+                    <!-- Posts se cargan aquí dinámicamente -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
